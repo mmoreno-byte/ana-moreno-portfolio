@@ -1,0 +1,162 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--black);
+}
+
+/* Grain texture — muy sutil */
+.hero__grain {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Glow rojo muy suave en esquina */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 40% 50% at 80% 40%, rgba(155,26,26,0.07) 0%, transparent 65%);
+}
+
+/* Content */
+.hero__content {
+  position: relative;
+  z-index: 3;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+/* Label */
+.hero__label {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 32px;
+  animation: fadeUp 0.7s ease both;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero__label::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* Title */
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  animation: fadeUp 0.7s 0.08s ease both;
+}
+
+.hero__title-first {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 13vw, 12rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--white);
+  letter-spacing: -2px;
+}
+
+.hero__title-last {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 13vw, 12rem);
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -2px;
+  /* Solo la segunda línea lleva el outline sutil */
+  -webkit-text-stroke: 0px;
+}
+
+/* Línea roja entre nombre y apellido */
+.hero__title::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  margin: 8px 0 0 2px;
+}
+
+/* Subtitle */
+.hero__sub {
+  margin-top: 40px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  max-width: 380px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  animation: fadeUp 0.7s 0.16s ease both;
+}
+
+/* Actions */
+.hero__actions {
+  margin-top: 48px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s 0.24s ease both;
+}
+
+/* Scroll indicator */
+.hero__scroll {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.hero__scroll span {
+  display: block;
+  width: 1px;
+  height: 56px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  margin: 0 auto;
+  animation: scroll-line 2.2s ease-in-out infinite;
+}
+
+@keyframes scroll-line {
+  0%   { transform: scaleY(0); transform-origin: top; }
+  50%  { transform: scaleY(1); transform-origin: top; }
+  51%  { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* Year deco — discreto, esquina inferior derecha */
+.hero__year {
+  position: absolute;
+  right: 40px;
+  bottom: 48px;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  color: var(--border);
+  z-index: 3;
+  writing-mode: vertical-rl;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .hero__title-first,
+  .hero__title-last { font-size: clamp(3.5rem, 18vw, 5.5rem); }
+  .hero__year { display: none; }
+  .hero__scroll { display: none; }
+}
