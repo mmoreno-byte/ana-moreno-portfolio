@@ -20,7 +20,7 @@ export default function About() {
               className="about__image"
             />
             <div className="about__image-border" aria-hidden="true" />
-            <div className="about__image-label">Andalucía</div>
+            <div className="about__image-label">Vélez-Málaga, Málaga</div>
           </div>
 
           <div className="about__text">
@@ -30,7 +30,7 @@ export default function About() {
             </div>
 
             <p className="about__bio">
-              Soy Ana Moreno, fotógrafa especializada en música en directo y diseñadora gráfica. 
+              Soy Ana Moreno Cabrera, fotógrafa especializada en música en directo y diseñadora gráfica. 
               Mi trabajo nace de la pasión por capturar esos instantes únicos que ocurren entre 
               el artista y el público: la mirada perdida en la canción, el sudor bajo los focos, 
               la electricidad del primer acorde.

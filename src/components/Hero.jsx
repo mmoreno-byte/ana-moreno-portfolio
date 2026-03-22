@@ -7,11 +7,12 @@ export default function Hero() {
       <div className="hero__bg" aria-hidden="true" />
 
       <div className="hero__content container">
-        <div className="hero__label">Fotografía · Diseño Gráfico · Andalucía</div>
+        <div className="hero__label">Fotografía · Diseño Gráfico · Vélez-Málaga</div>
 
         <h1 className="hero__title">
           <span className="hero__title-first">Ana</span>
-          <span className="hero__title-last">Moreno</span>
+          <span className="hero__title-middle">Moreno</span>
+          <span className="hero__title-last">Cabrera</span>
         </h1>
 
         <p className="hero__sub">

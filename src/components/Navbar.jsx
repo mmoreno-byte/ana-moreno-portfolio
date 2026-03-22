@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
         <a href="#" className="navbar__logo">
-          AM<span className="navbar__dot">.</span>
+          AMC<span className="navbar__dot">.</span>
         </a>
 
         <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
