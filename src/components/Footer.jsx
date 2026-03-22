@@ -21,19 +21,18 @@ export default function Footer() {
           </nav>
 
           <div className="footer__socials">
-            {/* SUSTITUYE los href por los perfiles reales */}
-            <a href="https://instagram.com/anamoreno" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/nana_m.c_foto" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="https://linkedin.com/in/anamoreno" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/anamorenocabrera" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
           </div>
         </div>
 
         <div className="footer__bottom">
-          <span>© {year} Ana Moreno — Todos los derechos reservados</span>
-          <span>Fotografía & Diseño Gráfico · Granada</span>
+          <span>© {year} Ana Moreno Cabrera — Todos los derechos reservados</span>
+          <span>Fotografía & Diseño Gráfico · Andalucía</span>
         </div>
       </div>
     </footer>

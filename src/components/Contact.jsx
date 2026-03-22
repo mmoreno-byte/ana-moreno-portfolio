@@ -17,16 +17,14 @@ export default function Contact() {
             </p>
 
             <div className="contact__channels">
-              {/* Email — SUSTITUYE por el email real de Ana */}
               <a href="mailto:nanamorenofoto@gmail.com" className="contact__channel">
                 <FaEnvelope className="contact__channel-icon" />
                 <div>
                   <span className="contact__channel-label">Email</span>
-                  <span className="contact__channel-value">ana@ejemplo.com</span>
+                  <span className="contact__channel-value">nanamorenofoto@gmail.com</span>
                 </div>
               </a>
 
-              {/* Instagram — SUSTITUYE por el usuario real */}
               <a
                 href="https://www.instagram.com/nana_m.c_foto"
                 target="_blank"
@@ -36,13 +34,12 @@ export default function Contact() {
                 <FaInstagram className="contact__channel-icon" />
                 <div>
                   <span className="contact__channel-label">Instagram</span>
-                  <span className="contact__channel-value">@anamoreno</span>
+                  <span className="contact__channel-value">@nana_m.c_foto</span>
                 </div>
               </a>
 
-              {/* LinkedIn — SUSTITUYE por el usuario real */}
               <a
-                href="https://www.linkedin.com/in/anamorenocabrera/"
+                href="https://www.linkedin.com/in/anamorenocabrera"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact__channel"
@@ -50,20 +47,17 @@ export default function Contact() {
                 <FaLinkedin className="contact__channel-icon" />
                 <div>
                   <span className="contact__channel-label">LinkedIn</span>
-                  <span className="contact__channel-value">Ana Moreno</span>
+                  <span className="contact__channel-value">Ana Moreno Cabrera</span>
                 </div>
               </a>
             </div>
           </div>
 
-          {/* Formulario */}
           <div className="contact__form-wrap">
             <form
               className="contact__form"
               onSubmit={e => {
                 e.preventDefault()
-                // Para un formulario funcional sin backend, puedes usar:
-                // Formspree (formspree.io) — gratuito, solo cambia la action del form
                 alert('Formulario enviado. (Conecta Formspree para hacerlo funcional)')
               }}
             >
