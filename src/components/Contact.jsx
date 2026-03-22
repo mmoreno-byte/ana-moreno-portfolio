@@ -18,7 +18,7 @@ export default function Contact() {
 
             <div className="contact__channels">
               {/* Email — SUSTITUYE por el email real de Ana */}
-              <a href="mailto:ana@ejemplo.com" className="contact__channel">
+              <a href="mailto:nanamorenofoto@gmail.com" className="contact__channel">
                 <FaEnvelope className="contact__channel-icon" />
                 <div>
                   <span className="contact__channel-label">Email</span>
@@ -28,7 +28,7 @@ export default function Contact() {
 
               {/* Instagram — SUSTITUYE por el usuario real */}
               <a
-                href="https://instagram.com/anamoreno"
+                href="https://www.instagram.com/nana_m.c_foto"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact__channel"
@@ -42,7 +42,7 @@ export default function Contact() {
 
               {/* LinkedIn — SUSTITUYE por el usuario real */}
               <a
-                href="https://linkedin.com/in/anamoreno"
+                href="https://www.linkedin.com/in/anamorenocabrera/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact__channel"
