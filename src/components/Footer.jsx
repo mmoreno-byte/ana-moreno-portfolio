@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__inner">
           <div className="footer__brand">
-            <span className="footer__logo">AM<span className="footer__dot">.</span></span>
+            <span className="footer__logo">AMC<span className="footer__dot">.</span></span>
             <p className="footer__tagline">Capturando la energía del directo.</p>
           </div>
 
