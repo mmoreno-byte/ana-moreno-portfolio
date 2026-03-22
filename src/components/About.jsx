@@ -20,7 +20,7 @@ export default function About() {
               className="about__image"
             />
             <div className="about__image-border" aria-hidden="true" />
-            <div className="about__image-label">Vélez-Málaga, Málaga</div>
+            <div className="about__image-label">Andalucía, Málaga</div>
           </div>
 
           <div className="about__text">
