@@ -7,7 +7,6 @@
   background: var(--black);
 }
 
-/* Grain texture — muy sutil */
 .hero__grain {
   position: absolute;
   inset: 0;
@@ -16,16 +15,13 @@
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
 }
 
-/* Glow rojo muy suave en esquina */
 .hero__bg {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background:
-    radial-gradient(ellipse 40% 50% at 80% 40%, rgba(155,26,26,0.07) 0%, transparent 65%);
+  background: radial-gradient(ellipse 40% 50% at 80% 40%, rgba(155,26,26,0.07) 0%, transparent 65%);
 }
 
-/* Content */
 .hero__content {
   position: relative;
   z-index: 3;
@@ -33,10 +29,9 @@
   padding-bottom: 80px;
 }
 
-/* Label */
 .hero__label {
-  font-size: 0.72rem;
-  letter-spacing: 0.22em;
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 32px;
@@ -44,6 +39,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  font-weight: 400;
 }
 
 .hero__label::before {
@@ -52,58 +48,54 @@
   width: 24px;
   height: 1px;
   background: var(--accent);
+  flex-shrink: 0;
 }
 
-/* Title */
+/* Título con Bebas Neue */
 .hero__title {
   display: flex;
   flex-direction: column;
-  line-height: 1;
+  line-height: 0.9;
   animation: fadeUp 0.7s 0.08s ease both;
+  letter-spacing: 6px;
 }
 
 .hero__title-first {
   font-family: var(--font-display);
-  font-size: clamp(5rem, 13vw, 12rem);
-  font-weight: 400;
-  font-style: italic;
+  font-size: clamp(5.5rem, 14vw, 13rem);
   color: var(--white);
-  letter-spacing: -2px;
+  text-transform: uppercase;
 }
 
 .hero__title-last {
   font-family: var(--font-display);
-  font-size: clamp(5rem, 13vw, 12rem);
-  font-weight: 900;
-  color: var(--white);
-  letter-spacing: -2px;
-  /* Solo la segunda línea lleva el outline sutil */
-  -webkit-text-stroke: 0px;
+  font-size: clamp(5.5rem, 14vw, 13rem);
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--white);
+  text-transform: uppercase;
+  opacity: 0.55;
 }
 
-/* Línea roja entre nombre y apellido */
 .hero__title::after {
   content: '';
   display: block;
   width: 48px;
   height: 2px;
   background: var(--accent);
-  margin: 8px 0 0 2px;
+  margin: 16px 0 0 3px;
 }
 
-/* Subtitle */
 .hero__sub {
-  margin-top: 40px;
-  font-size: 1rem;
+  margin-top: 36px;
+  font-size: 0.95rem;
   font-weight: 300;
   color: var(--muted);
   max-width: 380px;
-  line-height: 1.8;
+  line-height: 1.85;
   letter-spacing: 0.02em;
   animation: fadeUp 0.7s 0.16s ease both;
 }
 
-/* Actions */
 .hero__actions {
   margin-top: 48px;
   display: flex;
@@ -112,7 +104,6 @@
   animation: fadeUp 0.7s 0.24s ease both;
 }
 
-/* Scroll indicator */
 .hero__scroll {
   position: absolute;
   bottom: 48px;
@@ -137,16 +128,16 @@
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
 
-/* Year deco — discreto, esquina inferior derecha */
 .hero__year {
   position: absolute;
   right: 40px;
   bottom: 48px;
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   letter-spacing: 0.2em;
   color: var(--border);
   z-index: 3;
   writing-mode: vertical-rl;
+  font-weight: 300;
 }
 
 @keyframes fadeUp {
@@ -156,7 +147,7 @@
 
 @media (max-width: 768px) {
   .hero__title-first,
-  .hero__title-last { font-size: clamp(3.5rem, 18vw, 5.5rem); }
+  .hero__title-last { font-size: clamp(4rem, 18vw, 6rem); }
   .hero__year { display: none; }
   .hero__scroll { display: none; }
 }
