@@ -2,6 +2,16 @@
 
 Portfolio profesional de Ana Moreno, fotógrafa de conciertos y diseñadora gráfica.
 
+## 📸 Preview
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+
+![Preview 1](./screenshots/preview1.png)
+![Preview 2](./screenshots/preview2.png)
+![Preview 3](./screenshots/preview3.png)
+
+</div>
+
 ## Stack
 
 - **React 19** + **Vite 7**
