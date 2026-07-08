@@ -12,11 +12,14 @@
   --surface:  #0e0e0e;
   --surface2: #141414;
   --border:   #1e1e1e;
-  --white:    #ede9e3;
-  --muted:    #5c5752;
-  --accent:   #9b1a1a;
-  --accent2:  #b52020;
-  --accent3:  #cc2525;
+  --white:    #f0f0f0;
+  --muted:    #c0c0c0;
+  --muted-dark: #a0a0a0;
+  --accent:   #d32f2f;
+  --accent2:  #f44336;
+  --accent3:  #ff5722;
+  --success:  #4caf50;
+  --success:  #4caf50;
 
   --font-display: 'Bebas Neue', sans-serif;
   --font-body:    'Montserrat', sans-serif;

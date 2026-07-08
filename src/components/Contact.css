@@ -107,9 +107,9 @@
 }
 
 .contact__feedback--ok {
-  color: #5a9a5a;
-  border-color: #5a9a5a;
-  background: rgba(90, 154, 90, 0.06);
+  color: var(--success);
+  border-color: var(--success);
+  background: rgba(76, 175, 80, 0.06);
 }
 
 .contact__feedback--error {
